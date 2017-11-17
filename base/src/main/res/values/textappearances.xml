@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--默认文字样式-->
+    <style name="TextAppearance">
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textColorHint">?android:textColorHint</item>
+
+        <!--使用主题的 android:textSize ，或指定文字大小-->
+        <!--<item name="android:textSize">?android:textSize</item>-->
+        <item name="android:textSize">@dimen/textSizeBody1</item>
+
+        <item name="android:textColorHighlight">?android:textColorHighlight</item>
+        <item name="android:textColorLink">?android:textColorLink</item>
+    </style>
+
+    <!--标题文字样式-->
+    <style name="TextAppearance.Title">
+        <item name="android:textColor">@color/textColorTitle</item>
+        <item name="android:textSize">@dimen/textSizeTitle</item>
+    </style>
+
+    <!--副标题文字样式-->
+    <style name="TextAppearance.Subtitle">
+        <item name="android:textColor">@color/textColorSubtitle</item>
+        <item name="android:textSize">@dimen/textSizeSubtitle</item>
+    </style>
+
+    <!--一级正文文字样式-->
+    <style name="TextAppearance.Body1">
+        <item name="android:textColor">@color/textColorBody1</item>
+        <item name="android:textSize">@dimen/textSizeBody1</item>
+    </style>
+
+    <!--二级正文文字样式-->
+    <style name="TextAppearance.Body2">
+        <item name="android:textColor">@color/textColorBody2</item>
+        <item name="android:textSize">@dimen/textSizeBody2</item>
+    </style>
+
+    <!--标签文字样式-->
+    <style name="TextAppearance.Label">
+        <item name="android:textColor">@color/textColorLabel</item>
+        <item name="android:textSize">@dimen/textSizeLabel</item>
+    </style>
+
+    <!--按钮文字样式-->
+    <style name="TextAppearance.Button">
+        <item name="android:textColor">@color/textColorButton</item>
+        <item name="android:textSize">@dimen/textSizeButton</item>
+    </style>
+
+    <!--无边框按钮文字样式-->
+    <style name="TextAppearance.Button.Boundless">
+        <item name="android:textColor">@color/textColorButtonPrimary</item>
+    </style>
+
+</resources>

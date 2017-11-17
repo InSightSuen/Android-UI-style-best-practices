@@ -8,6 +8,14 @@
 
         <!--Activity 背景色-->
         <item name="android:windowBackground">@color/colorBackground</item>
+
+        <item name="android:textColorPrimary">@color/textColorBody1</item>
+        <item name="android:textColorHint">@color/textColorHint</item>
+        <item name="android:textColorHighlight">@color/textColorHint</item>
+        <!-- android:textSize 会全局影响到诸多控件，若不需要则注释-->
+        <!--<item name="android:textSize">@dimen/textSizeBody1</item>-->
+        <!--控件默认的文字样式-->
+        <item name="android:textAppearance">@style/TextAppearance</item>
     </style>
 
 </resources>

@@ -4,5 +4,11 @@
     <color name="paletteBlue">#1E88E5</color>
     <color name="paletteBlueDark">#263238</color>
     <color name="paletteBlueLight">#607D8B</color>
-    <color name="paletteWhite">#fafafa</color>
+
+    <color name="paletteGrey50">#fafafa</color>
+    <color name="paletteGrey200">#e0e0e0</color>
+    <color name="paletteGrey500">#9e9e9e</color>
+    <color name="paletteGrey700">#616161</color>
+    <color name="paletteGrey800">#424242</color>
+    <color name="paletteGrey900">#212121</color>
 </resources>
