@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!--默认文字样式-->
-    <style name="TextAppearance">
-        <item name="android:textColor">?android:textColorPrimary</item>
-        <item name="android:textColorHint">?android:textColorHint</item>
-
-        <!--使用主题的 android:textSize ，或指定文字大小-->
-        <!--<item name="android:textSize">?android:textSize</item>-->
+    <!--默认文字样式 使用了主题中文字相关的样式属性-->
+    <style name="BaseTextAppearance">
         <item name="android:textSize">@dimen/textSizeBody1</item>
+        <item name="android:textColor">@color/textColorBody1</item>
+        <item name="android:textColorHint">@color/textColorHint</item>
 
+        <!--默认引用 Theme attr，也可自定义-->
+        <item name="android:textColorPrimary">?android:textColorPrimary</item>
+        <item name="android:textColorSecondary">?android:textColorSecondary</item>
         <item name="android:textColorHighlight">?android:textColorHighlight</item>
         <item name="android:textColorLink">?android:textColorLink</item>
     </style>
 
     <!--标题文字样式-->
-    <style name="TextAppearance.Title">
+    <style name="TextAppearance.Title" parent="BaseTextAppearance">
         <item name="android:textColor">@color/textColorTitle</item>
         <item name="android:textSize">@dimen/textSizeTitle</item>
     </style>
 
     <!--副标题文字样式-->
-    <style name="TextAppearance.Subtitle">
+    <style name="TextAppearance.Subtitle" parent="BaseTextAppearance">
         <item name="android:textColor">@color/textColorSubtitle</item>
         <item name="android:textSize">@dimen/textSizeSubtitle</item>
     </style>
 
     <!--一级正文文字样式-->
-    <style name="TextAppearance.Body1">
+    <style name="TextAppearance.Body1" parent="BaseTextAppearance">
         <item name="android:textColor">@color/textColorBody1</item>
         <item name="android:textSize">@dimen/textSizeBody1</item>
     </style>
 
     <!--二级正文文字样式-->
-    <style name="TextAppearance.Body2">
+    <style name="TextAppearance.Body2" parent="BaseTextAppearance">
         <item name="android:textColor">@color/textColorBody2</item>
         <item name="android:textSize">@dimen/textSizeBody2</item>
     </style>
 
     <!--标签文字样式-->
-    <style name="TextAppearance.Label">
+    <style name="TextAppearance.Label" parent="BaseTextAppearance">
         <item name="android:textColor">@color/textColorLabel</item>
         <item name="android:textSize">@dimen/textSizeLabel</item>
     </style>
 
     <!--按钮文字样式-->
-    <style name="TextAppearance.Button">
+    <style name="TextAppearance.Button" parent="BaseTextAppearance">
         <item name="android:textColor">@color/textColorButton</item>
         <item name="android:textSize">@dimen/textSizeButton</item>
     </style>
 
     <!--无边框按钮文字样式-->
-    <style name="TextAppearance.Button.Boundless">
+    <style name="TextAppearance.Button.Boundless" parent="BaseTextAppearance">
         <item name="android:textColor">@color/textColorButtonPrimary</item>
     </style>
 

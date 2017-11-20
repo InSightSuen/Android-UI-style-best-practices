@@ -5,39 +5,44 @@
     android:orientation="vertical">
 
     <TextView
+        android:textAppearance="@style/TextAppearance.Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Title"
-        android:textAppearance="@style/TextAppearance.Title"/>
+        android:text="Title"/>
+
+    <TextView
+        style="@style/Text.Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subtitle"/>
+
+    <TextView
+        style="@style/Text.Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Label"/>
+
+    <TextView
+        style="@style/Text.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Body1"/>
+
+    <TextView
+        style="@style/Text.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Body2"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Subtitle"
-        android:textAppearance="@style/TextAppearance.Subtitle"/>
+        android:text="Unspecified"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Body1"
-        android:textAppearance="@style/TextAppearance.Body1"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Body2"
-        android:textAppearance="@style/TextAppearance.Body2"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Label"
-        android:textAppearance="@style/TextAppearance.Label"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        android:textAppearance="@style/TextAppearance.Button"/>
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Button"-->
+        <!--android:textAppearance="@style/TextAppearance.Button"/>-->
 
 </LinearLayout>
