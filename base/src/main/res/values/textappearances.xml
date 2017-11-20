@@ -51,7 +51,7 @@
     </style>
 
     <!--无边框按钮文字样式-->
-    <style name="TextAppearance.Button.Boundless" parent="BaseTextAppearance">
+    <style name="TextAppearance.Button.Borderless" parent="BaseTextAppearance">
         <item name="android:textColor">@color/textColorButtonPrimary</item>
     </style>
 
