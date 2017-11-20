@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--调色板 不直接使用-->
-    <color name="paletteBlue">#1E88E5</color>
-    <color name="paletteBlueDark">#263238</color>
-    <color name="paletteBlueLight">#607D8B</color>
+    <color name="paletteGreen1">#C8E774</color>
+    <color name="paletteGreen2">#8BCC00</color>
+    <color name="paletteGreen3">#00A39E</color>
+    <color name="paletteBlue1">#005470</color>
+    <color name="palettePurple1">#22223F</color>
 
     <color name="paletteGrey50">#fafafa</color>
     <color name="paletteGrey200">#e0e0e0</color>
