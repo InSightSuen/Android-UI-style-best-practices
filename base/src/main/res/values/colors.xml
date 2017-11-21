@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--color 全部引用调色板颜色-->
+    <color name="colorPrimary">@color/paletteGreen2</color>
+    <color name="colorPrimaryDark">@color/paletteGreen3</color>
+    <color name="colorAccent">@color/paletteBlue1</color>
+    <color name="colorBackground">@color/paletteGrey50</color>
+
+    <color name="textColorTitle">@color/paletteGrey900</color>
+    <color name="textColorSubtitle">@color/paletteGrey900</color>
+    <color name="textColorBody1">@color/paletteGrey800</color>
+    <color name="textColorBody2">@color/paletteGrey700</color>
+    <color name="textColorLabel">@color/paletteGrey500</color>
+    <color name="textColorHint">@color/paletteGrey500</color>
+    <color name="textColorButton">@color/paletteGrey50</color>
+    <color name="textColorButtonPrimary">@color/palettePurple1</color>
+    <color name="textColorHighLight">@color/paletteBlue1</color>
+</resources>

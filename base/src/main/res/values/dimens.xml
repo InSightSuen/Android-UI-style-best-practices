@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spaceSmall">8dp</dimen>
+    <dimen name="spaceMedium">12dp</dimen>
+    <dimen name="spaceLarge">16dp</dimen>
+
+    <dimen name="paddingTextHorizontal">@dimen/spaceSmall</dimen>
+    <dimen name="paddingTextVertical">@dimen/spaceSmall</dimen>
+    <dimen name="paddingButtonHorizontal">@dimen/spaceMedium</dimen>
+    <dimen name="paddingButtonVertical">@dimen/spaceLarge</dimen>
+
+    <dimen name="textSizeTitle">20sp</dimen>
+    <dimen name="textSizeSubtitle">18sp</dimen>
+    <dimen name="textSizeBody1">14sp</dimen>
+    <dimen name="textSizeBody2">12sp</dimen>
+    <dimen name="textSizeLabel">12sp</dimen>
+    <dimen name="textSizeButton">14sp</dimen>
+</resources>

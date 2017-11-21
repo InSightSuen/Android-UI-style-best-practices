@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--Activity 背景色-->
+        <item name="android:windowBackground">@color/colorBackground</item>
+
+        <!--默认的文字样式-->
+        <item name="android:textAppearance">@style/BaseTextAppearance</item>
+        
+        <!--Widget style-->
+        <item name="android:textViewStyle">@style/BaseText</item>
+        
+    </style>
+
+    <!--文字控件基础样式 不直接使用-->
+    <style name="BaseText">
+        <!--使用主体默认文字样式-->
+        <item name="android:textAppearance">?android:textAppearance</item>
+
+        <item name="android:paddingLeft">@dimen/paddingTextHorizontal</item>
+        <item name="android:paddingRight">@dimen/paddingTextHorizontal</item>
+        <item name="android:paddingTop">@dimen/paddingTextVertical</item>
+        <item name="android:paddingBottom">@dimen/paddingTextVertical</item>
+    </style>
+
+    <!--标题控件样式-->
+    <style name="Text.Title" parent="BaseText">
+        <item name="android:textAppearance">@style/TextAppearance.Title</item>
+    </style>
+
+    <!--副标题控件样式-->
+    <style name="Text.Subtitle" parent="BaseText">
+        <item name="android:textAppearance">@style/TextAppearance.Subtitle</item>
+    </style>
+
+    <!--一级正文控件样式-->
+    <style name="Text.Body1" parent="BaseText">
+        <item name="android:textAppearance">@style/TextAppearance.Body1</item>
+    </style>
+
+    <!--二级正文控件样式-->
+    <style name="Text.Body2" parent="BaseText">
+        <item name="android:textAppearance">@style/TextAppearance.Body2</item>
+    </style>
+
+    <!--标签控件样式-->
+    <style name="Text.Label" parent="BaseText">
+        <item name="android:textAppearance">@style/TextAppearance.Label</item>
+    </style>
+
+</resources>
