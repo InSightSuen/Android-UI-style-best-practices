@@ -4,7 +4,13 @@
     <color name="paletteGreen1">#C8E774</color>
     <color name="paletteGreen2">#8BCC00</color>
     <color name="paletteGreen3">#00A39E</color>
-    <color name="paletteBlue1">#005470</color>
+
+    <color name="paletteBlue1">#5C92A4</color>
+    <color name="paletteBlue2">#2E738A</color>
+    <color name="paletteBlue3">#005470</color>
+    <color name="paletteBlue4">#00455C</color>
+    <color name="paletteBlue5">#003648</color>
+
     <color name="palettePurple1">#22223F</color>
 
     <color name="paletteGrey50">#fafafa</color>
