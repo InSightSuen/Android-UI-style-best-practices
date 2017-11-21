@@ -6,16 +6,35 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
 
+        <!--控件普通状态颜色
+            CheckBox、RadioButton 控件的 unchecked 状态下 button 颜色
+            Switch 控件 checked 状态下 的指示器 track 颜色-->
+        <item name="colorControlNormal">@color/colorControlNormal</item>
+        <!--控件激活状态颜色
+            CheckBox、RadioButton 控件的 checked 状态下 button 颜色
+            Switch 控件 checked 状态下 的指示器 Thumbnail 颜色-->
+        <item name="colorControlActivated">@color/colorControlActivated</item>
+        <!--控件高亮状态颜色
+            Button、ToggleButton 控件 pressed 状态下 button 颜色-->
+        <item name="colorControlHighlight">@color/colorControlHighlight</item>
+        <!--按钮普通状态颜色
+            Button、ToggleButton 控件普通状态下 button 颜色-->
+        <item name="colorButtonNormal">@color/colorButtonNormal</item>
+        <!--Switch thumb 普通状态下颜色
+            但暂为发现使用该色值的控件-->
+        <item name="colorSwitchThumbNormal">@color/colorSwitchThumbNormal</item>
+
         <!--Activity 背景色-->
         <item name="android:windowBackground">@color/colorBackground</item>
 
         <!--默认的文字样式-->
         <item name="android:textAppearance">@style/BaseTextAppearance</item>
-        
+
         <!--Widget style-->
         <item name="android:textViewStyle">@style/BaseText</item>
         <item name="android:buttonStyle">@style/BaseButton</item>
-        
+        <item name="android:buttonStyleToggle">@style/Button.Toggle</item>
+
     </style>
 
     <!--文字控件基础样式 不直接使用-->
@@ -54,6 +73,11 @@
         <item name="android:textAppearance">@style/TextAppearance.Label</item>
     </style>
 
+    <!--标签控件样式-->
+    <style name="Text.Label.White" parent="BaseText">
+        <item name="android:textColor">@color/textColorLabelWhite</item>
+    </style>
+
     <!--按钮控件基础样式 不直接使用-->
     <style name="BaseButton" parent="Widget.AppCompat.Button">
         <item name="android:textAppearance">@style/TextAppearance.Button</item>
@@ -65,9 +89,12 @@
     </style>
 
     <!--无边按钮样式-->
-    <style name="Button.Borderless" parent="BaseButton">
-        <item name="android:background">@null</item>
+    <style name="Button.Borderless" parent="Widget.AppCompat.Button.Borderless">
         <item name="android:textAppearance">@style/TextAppearance.Button.Borderless</item>
+    </style>
+
+    <style name="Button.Toggle" parent="android:Widget.DeviceDefault.Button.Toggle">
+        <item name="android:textAppearance">@style/TextAppearance.Button</item>
     </style>
 
 </resources>
