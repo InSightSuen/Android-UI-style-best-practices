@@ -5,10 +5,10 @@
     android:orientation="vertical">
 
     <TextView
-        android:textAppearance="@style/TextAppearance.Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Title"/>
+        android:text="Title"
+        android:textAppearance="@style/TextAppearance.Title"/>
 
     <TextView
         style="@style/Text.Subtitle"
@@ -39,10 +39,15 @@
         android:layout_height="wrap_content"
         android:text="Unspecified"/>
 
-    <!--<Button-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="Button"-->
-        <!--android:textAppearance="@style/TextAppearance.Button"/>-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"/>
+
+    <Button
+        style="@style/Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Borderless Button"/>
 
 </LinearLayout>

@@ -14,6 +14,7 @@
         
         <!--Widget style-->
         <item name="android:textViewStyle">@style/BaseText</item>
+        <item name="android:buttonStyle">@style/BaseButton</item>
         
     </style>
 
@@ -51,6 +52,22 @@
     <!--标签控件样式-->
     <style name="Text.Label" parent="BaseText">
         <item name="android:textAppearance">@style/TextAppearance.Label</item>
+    </style>
+
+    <!--按钮控件基础样式 不直接使用-->
+    <style name="BaseButton" parent="Widget.AppCompat.Button">
+        <item name="android:textAppearance">@style/TextAppearance.Button</item>
+    </style>
+
+    <!--默认按钮样式-->
+    <style name="Button.Normal" parent="BaseButton">
+
+    </style>
+
+    <!--无边按钮样式-->
+    <style name="Button.Borderless" parent="BaseButton">
+        <item name="android:background">@null</item>
+        <item name="android:textAppearance">@style/TextAppearance.Button.Borderless</item>
     </style>
 
 </resources>
