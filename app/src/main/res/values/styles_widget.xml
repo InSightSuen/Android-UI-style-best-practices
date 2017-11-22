@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--标题控件样式-->
+    <style name="Text.Title" parent="BaseText">
+        <item name="android:textAppearance">@style/TextAppearance.Title</item>
+    </style>
+
+    <!--副标题控件样式-->
+    <style name="Text.Subtitle" parent="BaseText">
+        <item name="android:textAppearance">@style/TextAppearance.Subtitle</item>
+    </style>
+
+    <!--一级正文控件样式-->
+    <style name="Text.Body1" parent="BaseText">
+        <item name="android:textAppearance">@style/TextAppearance.Body1</item>
+    </style>
+
+    <!--二级正文控件样式-->
+    <style name="Text.Body2" parent="BaseText">
+        <item name="android:textAppearance">@style/TextAppearance.Body2</item>
+    </style>
+
+    <!--标签控件样式-->
+    <style name="Text.Label" parent="BaseText">
+        <item name="android:textAppearance">@style/TextAppearance.Label</item>
+    </style>
+
+    <!--标签控件样式-->
+    <style name="Text.Label.White" parent="BaseText">
+        <item name="android:textColor">@color/textColorLabelWhite</item>
+    </style>
+
+    <!--默认按钮样式-->
+    <style name="Button.Normal" parent="BaseButton">
+
+    </style>
+
+    <!--无边按钮样式-->
+    <style name="Button.Borderless" parent="Widget.AppCompat.Button.Borderless">
+
+    </style>
+
+</resources>

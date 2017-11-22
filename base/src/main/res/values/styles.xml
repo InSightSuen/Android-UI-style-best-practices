@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!--继承BaseTheme 设置下列属性来定制主题-->
     <style name="BaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <!--===-->
+        <!--颜色-->
+        <!--===-->
+        <!--主色-->
         <item name="colorPrimary">@color/colorPrimary</item>
+        <!--主色深 status bar 默认引用此颜色-->
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--辅色 一些控件如 FloatingActionButton 默认引用此颜色 -->
         <item name="colorAccent">@color/colorAccent</item>
 
         <!--控件普通状态颜色
@@ -33,68 +41,39 @@
         <!--Widget style-->
         <item name="android:textViewStyle">@style/BaseText</item>
         <item name="android:buttonStyle">@style/BaseButton</item>
-        <item name="android:buttonStyleToggle">@style/Button.Toggle</item>
+        <item name="android:buttonStyleToggle">@style/BaseToggle</item>
 
     </style>
 
     <!--文字控件基础样式 不直接使用-->
     <style name="BaseText">
-        <!--使用主体默认文字样式-->
         <item name="android:textAppearance">?android:textAppearance</item>
-
         <item name="android:paddingLeft">@dimen/paddingTextHorizontal</item>
         <item name="android:paddingRight">@dimen/paddingTextHorizontal</item>
         <item name="android:paddingTop">@dimen/paddingTextVertical</item>
         <item name="android:paddingBottom">@dimen/paddingTextVertical</item>
     </style>
 
-    <!--标题控件样式-->
-    <style name="Text.Title" parent="BaseText">
-        <item name="android:textAppearance">@style/TextAppearance.Title</item>
-    </style>
-
-    <!--副标题控件样式-->
-    <style name="Text.Subtitle" parent="BaseText">
-        <item name="android:textAppearance">@style/TextAppearance.Subtitle</item>
-    </style>
-
-    <!--一级正文控件样式-->
-    <style name="Text.Body1" parent="BaseText">
-        <item name="android:textAppearance">@style/TextAppearance.Body1</item>
-    </style>
-
-    <!--二级正文控件样式-->
-    <style name="Text.Body2" parent="BaseText">
-        <item name="android:textAppearance">@style/TextAppearance.Body2</item>
-    </style>
-
-    <!--标签控件样式-->
-    <style name="Text.Label" parent="BaseText">
-        <item name="android:textAppearance">@style/TextAppearance.Label</item>
-    </style>
-
-    <!--标签控件样式-->
-    <style name="Text.Label.White" parent="BaseText">
-        <item name="android:textColor">@color/textColorLabelWhite</item>
-    </style>
-
     <!--按钮控件基础样式 不直接使用-->
     <style name="BaseButton" parent="Widget.AppCompat.Button">
-        <item name="android:textAppearance">@style/TextAppearance.Button</item>
+        <item name="android:textAppearance">?android:textAppearance</item>
     </style>
 
-    <!--默认按钮样式-->
-    <style name="Button.Normal" parent="BaseButton">
-
+    <style name="BaseToggle" parent="android:Widget.DeviceDefault.Button.Toggle">
+        <item name="android:textAppearance">?android:textAppearance</item>
     </style>
 
-    <!--无边按钮样式-->
-    <style name="Button.Borderless" parent="Widget.AppCompat.Button.Borderless">
-        <item name="android:textAppearance">@style/TextAppearance.Button.Borderless</item>
-    </style>
+    <!--默认文字样式 使用了主题中文字相关的样式属性-->
+    <style name="BaseTextAppearance">
+        <item name="android:textSize">@dimen/textSizeBody1</item>
+        <item name="android:textColor">@color/textColorBody1</item>
+        <item name="android:textColorHint">@color/textColorHint</item>
 
-    <style name="Button.Toggle" parent="android:Widget.DeviceDefault.Button.Toggle">
-        <item name="android:textAppearance">@style/TextAppearance.Button</item>
+        <!--默认引用 Theme attr，也可自定义-->
+        <item name="android:textColorPrimary">?android:textColorPrimary</item>
+        <item name="android:textColorSecondary">?android:textColorSecondary</item>
+        <item name="android:textColorHighlight">?android:textColorHighlight</item>
+        <item name="android:textColorLink">?android:textColorLink</item>
     </style>
 
 </resources>
