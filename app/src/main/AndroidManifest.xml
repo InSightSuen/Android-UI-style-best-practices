@@ -17,12 +17,10 @@
         </activity>
 
         <activity
-            android:name=".TextStyleActivity"
-            android:theme="@style/AppTheme.TextStyle"/>
+            android:name=".TextStyleActivity"/>
 
         <activity
-            android:name=".ControlStyleActivity"
-            android:theme="@style/AppTheme.ControlStyle"/>
+            android:name=".ControlStyleActivity"/>
 
     </application>
 </manifest>

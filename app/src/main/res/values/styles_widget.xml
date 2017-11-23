@@ -1,51 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Text" parent="BaseTextViewStyle">
+    <!-- ===================== -->
+    <!-- TextView Widget Style -->
+    <!-- ===================== -->
+    <style name="TextView" parent="android:Widget.TextView">
+        <item name="android:textAppearance">?android:textAppearance</item>
+    </style>
+
+    <!--默认样式-->
+    <style name="TextView.Default"/>
+
+    <!--标题样式-->
+    <style name="TextView.Title">
+        <item name="android:textAppearance">@style/TextAppearance.Title</item>
+    </style>
+
+    <!--副标题样式-->
+    <style name="TextView.Subtitle">
+        <item name="android:textAppearance">@style/TextAppearance.Subtitle</item>
+    </style>
+
+    <style name="TextView.Content">
         <item name="android:paddingLeft">@dimen/paddingTextHorizontal</item>
         <item name="android:paddingRight">@dimen/paddingTextHorizontal</item>
         <item name="android:paddingTop">@dimen/paddingTextVertical</item>
         <item name="android:paddingBottom">@dimen/paddingTextVertical</item>
     </style>
 
-    <!--标题控件样式-->
-    <style name="Text.Title">
-        <item name="android:textAppearance">@style/TextAppearance.Title</item>
-    </style>
-
-    <!--副标题控件样式-->
-    <style name="Text.Subtitle">
-        <item name="android:textAppearance">@style/TextAppearance.Subtitle</item>
-    </style>
-
-    <!--一级正文控件样式-->
-    <style name="Text.Body1">
+    <!--一级正文样式-->
+    <style name="TextView.Body1" parent="TextView.Content">
         <item name="android:textAppearance">@style/TextAppearance.Body1</item>
     </style>
 
-    <!--二级正文控件样式-->
-    <style name="Text.Body2">
+    <!--二级正文样式-->
+    <style name="TextView.Body2" parent="TextView.Content">
         <item name="android:textAppearance">@style/TextAppearance.Body2</item>
     </style>
 
-    <!--标签控件样式-->
-    <style name="Text.Label">
+    <!--标签样式-->
+    <style name="TextView.Label">
         <item name="android:textAppearance">@style/TextAppearance.Label</item>
     </style>
 
-    <!--标签控件样式-->
-    <style name="Text.Label.White">
+    <!--标签样式-->
+    <style name="TextView.Label.White">
         <item name="android:textColor">@color/textColorLabelWhite</item>
     </style>
 
-    <!--默认按钮样式-->
-    <style name="Button.Normal" parent="BaseButtonStyle">
+    <!-- =================== -->
+    <!-- Button Widget Style -->
+    <!-- =================== -->
+    <style name="Button" parent="Widget.AppCompat.Button"/>
 
-    </style>
+    <!--默认按钮样式-->
+    <style name="Button.Default"/>
 
     <!--无边按钮样式-->
-    <style name="Button.Borderless" parent="Widget.AppCompat.Button.Borderless">
-
-    </style>
+    <style name="Button.Borderless" parent="Widget.AppCompat.Button.Borderless"/>
 
 </resources>

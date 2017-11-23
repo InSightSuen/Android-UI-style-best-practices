@@ -5,14 +5,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import com.insightsuen.base.view.BaseActivity;
+import com.insightsuen.uistyle.base.UiStyleActivity;
 
 /**
  * Created by InSight Suen on 2017/11/21.
  * 文字样式Activity
  */
 
-public class TextStyleActivity extends BaseActivity {
+public class TextStyleActivity extends UiStyleActivity {
 
     public static void start(Context context) {
         Intent starter = new Intent(context, TextStyleActivity.class);
