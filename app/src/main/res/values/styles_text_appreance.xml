@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!--默认文字样式 使用了主题中文字相关的样式属性-->
-    <style name="BaseTextAppearance">
-        <item name="android:textSize">@dimen/textSizeBody1</item>
-        <item name="android:textColor">@color/textColorBody1</item>
-        <item name="android:textColorHint">@color/textColorHint</item>
-
-        <!--默认引用 Theme attr，也可自定义-->
-        <item name="android:textColorPrimary">?android:textColorPrimary</item>
-        <item name="android:textColorSecondary">?android:textColorSecondary</item>
-        <item name="android:textColorHighlight">?android:textColorHighlight</item>
-        <item name="android:textColorLink">?android:textColorLink</item>
-    </style>
-
     <!--标题文字样式-->
     <style name="TextAppearance.Title" parent="BaseTextAppearance">
         <item name="android:textColor">@color/textColorTitle</item>
