@@ -2,11 +2,11 @@ package com.insightsuen.uistyle.base;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 
-import com.insightsuen.base.view.BaseActivity;
 import com.insightsuen.uistyle.R;
 import com.insightsuen.uistyle.util.ConfigUtil;
 
@@ -15,12 +15,18 @@ import com.insightsuen.uistyle.util.ConfigUtil;
  * App base activity
  */
 
-public abstract class UiStyleActivity extends BaseActivity {
+public abstract class UiStyleActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         initTheme();
         super.onCreate(savedInstanceState);
+    }
+
+    @Override
+    public void setContentView(int layoutResID) {
+        super.setContentView(layoutResID);
+        initToolBar();
     }
 
     protected void initToolBar() {

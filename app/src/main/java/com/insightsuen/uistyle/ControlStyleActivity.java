@@ -6,14 +6,14 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 
-import com.insightsuen.base.view.BaseActivity;
+import com.insightsuen.uistyle.base.UiStyleActivity;
 
 /**
  * Created by InSight Suen on 2017/11/21.
  * 控制控件样式 Activity
  */
 
-public class ControlStyleActivity extends BaseActivity {
+public class ControlStyleActivity extends UiStyleActivity {
 
     public static void start(Context context) {
         Intent starter = new Intent(context, ControlStyleActivity.class);

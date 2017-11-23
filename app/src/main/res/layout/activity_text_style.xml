@@ -49,31 +49,31 @@
             android:paddingTop="4dp">
 
             <TextView
-                style="@style/Text.Title"
+                style="@style/TextView.Title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Title"/>
 
             <TextView
-                style="@style/Text.Subtitle"
+                style="@style/TextView.Subtitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Subtitle"/>
 
             <TextView
-                style="@style/Text.Label"
+                style="@style/TextView.Label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Label"/>
 
             <TextView
-                style="@style/Text.Body1"
+                style="@style/TextView.Body1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Body1"/>
 
             <TextView
-                style="@style/Text.Body2"
+                style="@style/TextView.Body2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Body2"/>

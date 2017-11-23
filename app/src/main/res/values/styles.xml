@@ -1,8 +1,6 @@
 <resources>
 
-    <style name="AppTheme" parent="BaseTheme">
-
-    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
 
     <style name="AppTheme.Colorful">
         <item name="colorPrimary">@color/colorPrimary</item>
@@ -17,18 +15,15 @@
 
         <item name="colorBackgroundFloating">@color/colorBackgroundFloating</item>
 
-    </style>
-
-    <style name="AppTheme.TextStyle">
         <item name="android:textColorPrimary">@color/textColorPrimary</item>
         <item name="android:textColorSecondary">@color/textColorSecondary</item>
         <item name="android:textColorHint">@color/textColorHint</item>
         <item name="android:textColorHighlight">@color/textColorHighlight</item>
-    </style>
 
-    <style name="AppTheme.ControlStyle">
-        <item name="android:textViewStyle">@style/Text.Body1</item>
-        <item name="android:buttonStyle">@style/Button.Normal</item>
+        <item name="android:textAppearance">@style/TextAppearance.Default</item>
+        <item name="android:textViewStyle">@style/TextView.Default</item>
+        <!--<item name="android:buttonStyle">@style/Button.Normal</item>-->
+
     </style>
 
 </resources>
