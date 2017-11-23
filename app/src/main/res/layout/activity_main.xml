@@ -60,6 +60,12 @@
                 android:onClick="onClickControlStyle"
                 android:text="ControlStyle"/>
 
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickDialog"
+                android:text="DialogStyle"/>
+
         </LinearLayout>
 
     </ScrollView>

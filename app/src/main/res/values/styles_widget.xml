@@ -1,38 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <style name="Text" parent="BaseTextViewStyle">
+        <item name="android:paddingLeft">@dimen/paddingTextHorizontal</item>
+        <item name="android:paddingRight">@dimen/paddingTextHorizontal</item>
+        <item name="android:paddingTop">@dimen/paddingTextVertical</item>
+        <item name="android:paddingBottom">@dimen/paddingTextVertical</item>
+    </style>
+
     <!--标题控件样式-->
-    <style name="Text.Title" parent="BaseText">
+    <style name="Text.Title">
         <item name="android:textAppearance">@style/TextAppearance.Title</item>
     </style>
 
     <!--副标题控件样式-->
-    <style name="Text.Subtitle" parent="BaseText">
+    <style name="Text.Subtitle">
         <item name="android:textAppearance">@style/TextAppearance.Subtitle</item>
     </style>
 
     <!--一级正文控件样式-->
-    <style name="Text.Body1" parent="BaseText">
+    <style name="Text.Body1">
         <item name="android:textAppearance">@style/TextAppearance.Body1</item>
     </style>
 
     <!--二级正文控件样式-->
-    <style name="Text.Body2" parent="BaseText">
+    <style name="Text.Body2">
         <item name="android:textAppearance">@style/TextAppearance.Body2</item>
     </style>
 
     <!--标签控件样式-->
-    <style name="Text.Label" parent="BaseText">
+    <style name="Text.Label">
         <item name="android:textAppearance">@style/TextAppearance.Label</item>
     </style>
 
     <!--标签控件样式-->
-    <style name="Text.Label.White" parent="BaseText">
+    <style name="Text.Label.White">
         <item name="android:textColor">@color/textColorLabelWhite</item>
     </style>
 
     <!--默认按钮样式-->
-    <style name="Button.Normal" parent="BaseButton">
+    <style name="Button.Normal" parent="BaseButtonStyle">
 
     </style>
 

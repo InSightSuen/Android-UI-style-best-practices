@@ -1,11 +1,18 @@
 <resources>
 
     <style name="AppTheme" parent="BaseTheme">
-        <!--df-->
-        <eat-comment />
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="colorError">@color/colorError</item>
+
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:colorForeground">@color/colorForeground</item>
+        <item name="android:colorForegroundInverse">@color/colorForegroundInverse</item>
+
+        <item name="colorBackgroundFloating">@color/colorBackgroundFloating</item>
+
     </style>
 
     <style name="AppTheme.TextStyle">

@@ -1,5 +1,6 @@
 package com.insightsuen.uistyle;
 
+import android.app.AlertDialog;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
@@ -25,5 +26,14 @@ public class MainActivity extends BaseActivity {
 
     public void onClickControlStyle(View view) {
         ControlStyleActivity.start(this);
+    }
+
+    public void onClickDialog(View view) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Dialog title")
+                .setMessage("Dialog message")
+                .setPositiveButton("OK", null)
+                .setNegativeButton("Cancel", null);
+        builder.show();
     }
 }
