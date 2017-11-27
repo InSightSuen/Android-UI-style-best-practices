@@ -5,21 +5,23 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <include layout="@layout/include_tool_bar"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="72dp"
         android:orientation="horizontal">
 
         <TextView
-            style="@style/Text.Label.White"
+            android:id="@+id/tv_control_normal"
+            style="@style/TextView.Label.Inverse"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textColor="?colorControlNormal"
             android:text="colorControlNormal"/>
 
         <TextView
-            style="@style/Text.Label.White"
+            style="@style/TextView.Label.Inverse"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -28,7 +30,7 @@
 
 
         <TextView
-            style="@style/Text.Label.White"
+            style="@style/TextView.Label.Inverse"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -36,7 +38,7 @@
             android:text="colorControlHighlight"/>
 
         <TextView
-            style="@style/Text.Label.White"
+            style="@style/TextView.Label"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -66,6 +68,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Borderless Button"/>
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="ToggleButton"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_done_white_24dp"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -97,12 +110,6 @@
                 android:layout_height="wrap_content"
                 android:checked="true"
                 android:text="Switch"/>
-
-            <ToggleButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="true"
-                android:text="ToggleButton"/>
 
             <android.support.design.widget.FloatingActionButton
                 android:layout_width="wrap_content"
