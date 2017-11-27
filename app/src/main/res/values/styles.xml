@@ -1,5 +1,6 @@
 <resources>
 
+    <!-- Default app theme -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
 
     <style name="AppTheme.Colorful">
@@ -26,9 +27,15 @@
 
         <item name="android:textAppearance">@style/TextAppearance.Default</item>
         <item name="android:textAppearanceButton">@style/TextAppearance.Button</item>
-        <item name="android:textViewStyle">@style/TextView.Default</item>
-        <item name="android:buttonStyle">@style/Button.Default</item>
 
+        <item name="android:textViewStyle">@style/TextView.Default</item>
+        <item name="android:editTextStyle">@style/EditText.Default</item>
+        <item name="android:buttonStyle">@style/Button.Default</item>
+        <item name="android:buttonStyleToggle">@style/ToggleButton.Default</item>
+        <item name="android:imageButtonStyle">@style/ImageButton.Default</item>
+        <item name="android:checkboxStyle">@style/CheckBox.Default</item>
+        <item name="android:radioButtonStyle">@style/RadioButton.Default</item>
+        <item name="switchStyle">@style/Switch.Default</item>
     </style>
 
 </resources>
