@@ -1,41 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <include layout="@layout/include_tool_bar" />
+    <include layout="@layout/include_tool_bar"/>
 
-    <!--<LinearLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="48dp"-->
-        <!--android:elevation="4dp"-->
-        <!--android:orientation="horizontal">-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:elevation="4dp"
+        android:orientation="horizontal">
 
-        <!--<TextView-->
-            <!--style="@style/Text.Label.White"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="1"-->
-            <!--android:background="?colorPrimary"-->
-            <!--android:text="colorPrimary"/>-->
+        <TextView
+            style="@style/TextView.Label"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?colorPrimary"
+            android:text="textColorPrimary"
+            android:textColor="?android:textColorPrimary"/>
 
-        <!--<TextView-->
-            <!--style="@style/Text.Label.White"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="1"-->
-            <!--android:background="?colorPrimaryDark"-->
-            <!--android:text="colorPrimaryDark"/>-->
+        <TextView
+            style="@style/TextView.Label"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?colorPrimary"
+            android:text="textColorSecondary"
+            android:textColor="?android:textColorSecondary"/>
 
-        <!--<TextView-->
-            <!--style="@style/Text.Label.White"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="1"-->
-            <!--android:background="?colorAccent"-->
-            <!--android:text="colorAccent"/>-->
+        <TextView
+            style="@style/TextView.Label"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?colorPrimary"
+            android:text="textColorTertiary"
+            android:textColor="?android:textColorTertiary"/>
 
-    <!--</LinearLayout>-->
+    </LinearLayout>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -85,7 +89,8 @@
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:hint="hint"/>
 
         </LinearLayout>
 

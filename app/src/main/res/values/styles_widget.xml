@@ -4,59 +4,126 @@
     <!-- ===================== -->
     <!-- TextView Widget Style -->
     <!-- ===================== -->
-    <style name="TextView" parent="android:Widget.TextView">
+
+    <!-- BaseTextView 作为所有 TextView 的 parent style，不直接使用 -->
+    <style name="BaseTextView" parent="android:Widget.TextView">
+        <!-- 定义最基础的 TextView 统一属性 -->
+    </style>
+
+    <!-- 正文 Base Style -->
+    <style name="BaseTextView.Main">
+        <item name="android:paddingLeft">@dimen/paddingTextHorizontal</item>
+        <item name="android:paddingRight">@dimen/paddingTextHorizontal</item>
+        <item name="android:paddingTop">@dimen/paddingTextVertical</item>
+        <item name="android:paddingBottom">@dimen/paddingTextVertical</item>
+
         <item name="android:textAppearance">?android:textAppearance</item>
     </style>
 
-    <!--默认样式-->
-    <style name="TextView.Default"/>
-
-    <!--标题样式-->
-    <style name="TextView.Title">
-        <item name="android:textAppearance">@style/TextAppearance.Title</item>
-    </style>
-
-    <!--副标题样式-->
-    <style name="TextView.Subtitle">
-        <item name="android:textAppearance">@style/TextAppearance.Subtitle</item>
-    </style>
-
-    <style name="TextView.Content">
+    <!-- 标题 Base Style -->
+    <style name="BaseTextView.Caption">
         <item name="android:paddingLeft">@dimen/paddingTextHorizontal</item>
         <item name="android:paddingRight">@dimen/paddingTextHorizontal</item>
         <item name="android:paddingTop">@dimen/paddingTextVertical</item>
         <item name="android:paddingBottom">@dimen/paddingTextVertical</item>
     </style>
 
+    <!-- 提示 Base Style -->
+    <style name="BaseTextView.Prompt">
+        <item name="android:paddingLeft">@dimen/paddingTextHorizontal</item>
+        <item name="android:paddingRight">@dimen/paddingTextHorizontal</item>
+        <item name="android:paddingTop">@dimen/paddingTextVertical</item>
+        <item name="android:paddingBottom">@dimen/paddingTextVertical</item>
+    </style>
+
+    <!--默认样式-->
+    <style name="TextView.Default" parent="BaseTextView">
+        <item name="android:textAppearance">?android:textAppearance</item>
+    </style>
+
+    <!--标题样式-->
+    <style name="TextView.Title" parent="BaseTextView.Caption">
+        <item name="android:textAppearance">@style/TextAppearance.Title</item>
+    </style>
+
+    <!--副标题样式-->
+    <style name="TextView.Subtitle" parent="BaseTextView.Caption">
+        <item name="android:textAppearance">@style/TextAppearance.Subtitle</item>
+    </style>
+
     <!--一级正文样式-->
-    <style name="TextView.Body1" parent="TextView.Content">
+    <style name="TextView.Body1" parent="BaseTextView.Main">
         <item name="android:textAppearance">@style/TextAppearance.Body1</item>
     </style>
 
     <!--二级正文样式-->
-    <style name="TextView.Body2" parent="TextView.Content">
-        <item name="android:textAppearance">@style/TextAppearance.Body2</item>
+    <style name="TextView.Body2" parent="BaseTextView.Main">
+        <item name="android:textAppearance">@style/BaseTextAppearance.Body2</item>
     </style>
 
     <!--标签样式-->
-    <style name="TextView.Label">
-        <item name="android:textAppearance">@style/TextAppearance.Label</item>
+    <style name="TextView.Label" parent="BaseTextView.Prompt">
+        <item name="android:textAppearance">@style/BaseTextAppearance.Label</item>
     </style>
 
     <!--标签样式-->
-    <style name="TextView.Label.White">
-        <item name="android:textColor">@color/textColorLabelWhite</item>
+    <style name="TextView.Label.Inverse" parent="BaseTextView.Prompt">
+        <item name="android:textColor">?android:textColorTertiaryInverse</item>
     </style>
+
+    <!-- =================== -->
+    <!-- EditText Widget Style -->
+    <!-- =================== -->
+    <style name="BaseEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textAppearance">?android:textAppearance</item>
+    </style>
+
+    <style name="EditText.Default" parent="BaseEditText"/>
 
     <!-- =================== -->
     <!-- Button Widget Style -->
     <!-- =================== -->
-    <style name="Button" parent="Widget.AppCompat.Button"/>
+    <style name="BaseButton" parent="Widget.AppCompat.Button">
+        <item name="android:textAppearance">?android:textAppearanceButton</item>
+    </style>
 
     <!--默认按钮样式-->
-    <style name="Button.Default"/>
+    <style name="Button.Default" parent="BaseButton"/>
 
     <!--无边按钮样式-->
-    <style name="Button.Borderless" parent="Widget.AppCompat.Button.Borderless"/>
+    <style name="Button.Borderless" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textAppearance">@style/TextAppearance.Button.Borderless</item>
+    </style>
+
+    <style name="BaseToggleButton" parent="android:Widget.DeviceDefault.Button.Toggle">
+        <item name="android:textAppearance">?android:textAppearanceButton</item>
+    </style>
+
+    <style name="ToggleButton.Default" parent="BaseToggleButton"/>
+
+    <style name="BaseImageButton" parent="Widget.AppCompat.ImageButton" />
+
+    <style name="ImageButton.Default" parent="BaseImageButton"/>
+
+    <!-- =========================== -->
+    <!-- CompoundButton Widget Style -->
+    <!-- =========================== -->
+    <style name="BaseCheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:textAppearance">?android:textAppearance</item>
+    </style>
+
+    <style name="CheckBox.Default" parent="BaseCheckBox"/>
+
+    <style name="BaseSwitch" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:textAppearance">?android:textAppearance</item>
+    </style>
+
+    <style name="Switch.Default" parent="BaseSwitch"/>
+
+    <style name="BaseRadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textAppearance">?android:textAppearance</item>
+    </style>
+
+    <style name="RadioButton.Default" parent="BaseRadioButton"/>
 
 </resources>

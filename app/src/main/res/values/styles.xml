@@ -1,29 +1,41 @@
 <resources>
 
+    <!-- Default app theme -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
 
     <style name="AppTheme.Colorful">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-
         <item name="colorError">@color/colorError</item>
 
         <item name="android:colorBackground">@color/colorBackground</item>
         <item name="android:colorForeground">@color/colorForeground</item>
         <item name="android:colorForegroundInverse">@color/colorForegroundInverse</item>
-
         <item name="colorBackgroundFloating">@color/colorBackgroundFloating</item>
 
         <item name="android:textColorPrimary">@color/textColorPrimary</item>
         <item name="android:textColorSecondary">@color/textColorSecondary</item>
+        <item name="android:textColorTertiary">@color/textColorTertiary</item>
         <item name="android:textColorHint">@color/textColorHint</item>
         <item name="android:textColorHighlight">@color/textColorHighlight</item>
 
-        <item name="android:textAppearance">@style/TextAppearance.Default</item>
-        <item name="android:textViewStyle">@style/TextView.Default</item>
-        <!--<item name="android:buttonStyle">@style/Button.Normal</item>-->
+        <item name="colorControlNormal">@color/colorControlNormal</item>
+        <item name="colorControlActivated">@color/colorControlActivated</item>
+        <item name="colorControlHighlight">@color/colorControlHighlight</item>
+        <item name="colorButtonNormal">@color/colorButtonNormal</item>
 
+        <item name="android:textAppearance">@style/TextAppearance.Default</item>
+        <item name="android:textAppearanceButton">@style/TextAppearance.Button</item>
+
+        <item name="android:textViewStyle">@style/TextView.Default</item>
+        <item name="android:editTextStyle">@style/EditText.Default</item>
+        <item name="android:buttonStyle">@style/Button.Default</item>
+        <item name="android:buttonStyleToggle">@style/ToggleButton.Default</item>
+        <item name="android:imageButtonStyle">@style/ImageButton.Default</item>
+        <item name="android:checkboxStyle">@style/CheckBox.Default</item>
+        <item name="android:radioButtonStyle">@style/RadioButton.Default</item>
+        <item name="switchStyle">@style/Switch.Default</item>
     </style>
 
 </resources>
